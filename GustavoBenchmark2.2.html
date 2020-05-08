@@ -43,9 +43,49 @@
         footer>.row.py-3{
             background-color:rgb(40,40,40);
         }
-        footer .col-12.col-md-2 i:hover{
+        footer .col-12.col-lg-3 i:hover{
             color:turquoise !important;
         }
+        .hiddenButton{
+            opacity: 0;
+            position:relative;
+            left:1.55rem;
+            transition:  opacity 1s;
+        }
+        #card1:hover .hiddenButton{
+            opacity: 1;
+        }
+        #card2:hover .hiddenButton{
+            opacity: 1;
+        }
+        #card3:hover .hiddenButton{
+            opacity: 1;
+        }
+        #card4:hover .hiddenButton{
+            opacity: 1;
+        }
+        .priceMove{
+            position:relative;
+            left:0rem;
+            transition: position .2s;
+        }
+        #card1:hover .priceMove{
+            position:relative;
+            left:-2.5rem;
+        }
+        #card2:hover .priceMove{
+            position:relative;
+            left:-2.5rem;
+        }
+        #card3:hover .priceMove{
+            position:relative;
+            left:-2.5rem;
+        }
+        #card4:hover .priceMove{
+            position:relative;
+            left:-2.5rem;
+        }
+
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
@@ -142,7 +182,7 @@
                     <img class="d-block w-100" src="https://cdn3.dualshockers.com/wp-content/uploads/2016/10/Rocket-League-1-2-ds1-1340x1340.jpg" alt="First slide">
                     <div class="row" style="position:absolute !important;bottom:2rem;left:1.2rem; width:98%;">
                         <div class="col-12 col-lg-9">
-                            <a style="color:#fff; font-size: 1.5rem;"href="#">Tonight We Riot</a>
+                            <a style="color:#fff; font-size: 1.5rem;"href="#" class="stretched-link">Tonight We Riot</a>
                         </div>
                         <div class="col-12 col-lg-3">
                             <a style="color:#fff; font-size: 1.5rem;"href="#">€18.99</a>
@@ -154,7 +194,7 @@
                     <img class="d-block w-100" src="https://ksr-ugc.imgix.net/assets/004/850/334/974e8adc1bd610401d430e2d152e37f3_original.png?ixlib=rb-2.1.0&w=700&fit=max&v=1446790434&auto=format&frame=1&q=92&s=d4fc61af2e356f91d0c977ba6bffef4f" alt="Second slide">
                     <div class="row" style="position:absolute !important;bottom:2rem;left:1.2rem; width:98%;">
                         <div class="col-12 col-lg-9">
-                            <a style="color:black; font-size: 1.5rem;"href="#">Tonight We Riot</a>
+                            <a style="color:black; font-size: 1.5rem;"href="#" class="stretched-link">Tonight We Riot</a>
                         </div>
                         <div class="col-12 col-lg-3">
                             <a style="color:black; font-size: 1.5rem;"href="#">€18.99</a>
@@ -166,7 +206,7 @@
                     <img class="d-block w-100" src="https://d3tg06jbotvai2.cloudfront.net/game_tetiere/upload/gameimage/file/6581.jpeg" alt="Third slide">
                     <div class="row" style="position:absolute !important;bottom:2rem;left:1.2rem; width:98%;">
                         <div class="col-12 col-lg-9">
-                            <a style="color:#fff; font-size: 1.5rem;"href="#">Tonight We Riot</a>
+                            <a style="color:#fff; font-size: 1.5rem;"href="#" class="stretched-link">Tonight We Riot</a>
                         </div>
                         <div class="col-12 col-lg-3">
                             <a style="color:#fff; font-size: 1.5rem;"href="#">€18.99</a>
@@ -178,7 +218,7 @@
                     <img class="d-block w-100" src="https://i.ytimg.com/vi/NiVSqhjGWDg/maxresdefault.jpg" alt="Fourth slide">
                     <div class="row" style="position:absolute !important;bottom:2rem;left:1.2rem; width:98%;">
                         <div class="col-12 col-lg-9">
-                            <a style="color:#fff; font-size: 1.5rem;"href="#">Tonight We Riot</a>
+                            <a style="color:#fff; font-size: 1.5rem;"href="#" class="stretched-link">Tonight We Riot</a>
                         </div>
                         <div class="col-12 col-lg-3">
                             <a style="color:#fff; font-size: 1.5rem;"href="#">€18.99</a>
@@ -190,7 +230,7 @@
                     <img class="d-block w-100" src="https://images.nintendolife.com/89afd067bc010/river-city-girls.original.jpg" alt="Fifth slide">
                     <div class="row" style="position:absolute !important;bottom:2rem;left:1.2rem; width:98%;">
                         <div class="col-12 col-lg-9">
-                            <a style="color:black; font-size: 1.5rem;"href="#">Tonight We Riot</a>
+                            <a style="color:black; font-size: 1.5rem;"href="#" class="stretched-link">Tonight We Riot</a>
                         </div>
                         <div class="col-12 col-lg-3">
                             <a style="color:black; font-size: 1.5rem;"href="#">€18.99</a>
@@ -206,6 +246,45 @@
                     <i class="fa fa-chevron-circle-right" style="box-sizing: content-box;height:2rem;width:2rem;font-size:2rem;color:grey;border-radius: 100%;border: 5px solid #d8d8d8;"></i>
                 </a>
               </div>
+            <hr>
+            <div class="row">
+                <div class="col col-12 col-md-6 col-lg-3">
+                    <div class="card" id="card1" style="width: 100%;">
+                        <img class="card-img-top" src="https://steamcdn-a.akamaihd.net/steam/apps/404200/header.jpg?t=1560415598" alt="Wartile">
+                        <div class="card-body">
+                          <p class="card-text">WARTILE</p>
+                          <p class="float-right priceMove">€5</p><a href="#" class="hiddenButton btn btn-primary stretched-link float-right" style="background:linear-gradient(-180deg,#c1ec51,#80b02a);color:white;"><i class="fa fa-shopping-cart" style="font-size:1.2rem;color:#ccc;transform: scaleX(-1);"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-3">
+                    <div class="card" id="card2" style="width: 100%;">
+                        <img class="card-img-top" src="https://steamcdn-a.akamaihd.net/steam/apps/404200/header.jpg?t=1560415598" alt="Wartile">
+                        <div class="card-body">
+                          <p class="card-text">WARTILE</p>
+                          <p class="float-right priceMove">€5</p><a href="#" class="hiddenButton btn btn-primary stretched-link float-right" style="background:linear-gradient(-180deg,#c1ec51,#80b02a);color:white;"><i class="fa fa-shopping-cart" style="font-size:1.2rem;color:#ccc;transform: scaleX(-1);"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-3">
+                    <div class="card" id="card3" style="width: 100%;">
+                        <img class="card-img-top" src="https://steamcdn-a.akamaihd.net/steam/apps/404200/header.jpg?t=1560415598" alt="Wartile">
+                        <div class="card-body">
+                          <p class="card-text">WARTILE</p>
+                          <p class="float-right priceMove">€5</p><a href="#" class="hiddenButton btn btn-primary stretched-link float-right" style="background:linear-gradient(-180deg,#c1ec51,#80b02a);color:white;"><i class="fa fa-shopping-cart" style="font-size:1.2rem;color:#ccc;transform: scaleX(-1);"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-6 col-lg-3">
+                    <div class="card" id="card4" style="width: 100%;">
+                        <img class="card-img-top" src="https://steamcdn-a.akamaihd.net/steam/apps/404200/header.jpg?t=1560415598" alt="Wartile">
+                        <div class="card-body">
+                          <p class="card-text">WARTILE</p>
+                          <p class="float-right priceMove">€5</p><a href="#" class="hiddenButton btn btn-primary stretched-link float-right" style="background:linear-gradient(-180deg,#c1ec51,#80b02a);color:white;"><i class="fa fa-shopping-cart" style="font-size:1.2rem;color:#ccc;transform: scaleX(-1);"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <hr>
         </main>
         <footer class="footer bg-dark sticky-bottom">
